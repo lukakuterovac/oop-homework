@@ -21,7 +21,7 @@ namespace WeatherForecast
         public double GetMaxTemperature()
         {
             DailyForecast maxTemperature = weeklyForecast[0];
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < weeklyForecast.Length; i++)
             {
                 if (weeklyForecast[i] > maxTemperature)
                 {
